@@ -3,117 +3,222 @@
 	Strata by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
---> 
+-->
 <html>
-	<head>
-		<title>Jessica He's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Rajdhani&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
-		<link rel="icon" href="images/monitor.png" type="image/x-icon">
-	</head>
-	<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a><br /><br />
-					<h7>Jessica He</h7><br /><br />
-					<ul class="icons">
-						<li><a href="https://github.com/JessicaJHee" class="icon brands fa-github"><span class="label" target="_blank">Github</span></a></li>
-						<li><a href="https://www.linkedin.com/in/jessica-he-30a87a186/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-					</ul>
-					<h8>3rd Year Computer Engineering @<br />
-						University of Toronto<br />
-					</h8>
-				</div>
+<head>
+	<title>Jessica He's Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Rajdhani&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+	<link rel="icon" href="images/monitor.png" type="image/x-icon">
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<div class="inner">
+			<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a><br /><br />
+			<h7>Jessica He</h7><br /><br />
+			<ul class="icons">
+				<li><a href="https://github.com/JessicaJHee" class="icon brands fa-github"><span class="label"
+							target="_blank">Github</span></a></li>
+				<li><a href="https://www.linkedin.com/in/jessica-j-he" class="icon brands fa-linkedin"
+						target="_blank"><span class="label">LinkedIn</span></a></li>
+			</ul>
+			<h8>4th Year Computer Engineering @<br />
+				University of Toronto<br />
+			</h8>
+		</div>
+	</header>
+
+	<!-- Main -->
+	<div id="main">
+
+		<section id="intro">
+			<header class="major">
+				<h2> &#128075; Nice to meet you!</h2>
 			</header>
+			<div style="display:flex; flex-direction: row; gap: 2em;">
+				<img src="images/kimono.jpg" alt="" style="border-radius: 10%; width: 30%; height:30%;" />
+				<p><br /><br />I'm Jessica, a computer engineer who specializes in <strong>full stack
+						development.</strong>
+					My strong interpersonal skills as well as genuine interest in building meaningful connections makes
+					me
+					an efficient team member and leader. I'm always eager to expand my skill set and grow in this
+					exhilarating world of tech!
+				</p>
+			</div>
+		</section>
 
-		<!-- Main -->
-			<div id="main">
+		<section id="open-source-work">
+			<h2><strong> &#128275; Open Source Work</strong></h2>
+			<div class="row">
+				<article class="col-12 work-item">
+					<a href="demo_videos/create_component_demo.gif" class="image fit thumb"><img
+							src="demo_videos/create_component_demo.gif" alt="" /></a>
+					<h2><strong>VS Code OpenShift Tools</strong>: Create OpenShift Component Webview</h2>
+					<p>Typescript, React, VS Code API</p>
+					<h4>Prior to this change, there was a visibility issue with the different methods to create an
+						OpenShift component. The workflows were scattered across different views and commands. To solve
+						this issue, this webview combines three different workflows cohesively while improving the UI to
+						better developer experience.
+					</h4>
+				</article>
+				<article class="col-12 work-item">
+					<div style="display:flex; flex-direction: row; gap: 1em;">
+						<a href="demo_videos/decompile_class_files_before.gif" class="image fit thumb"><img
+								src="demo_videos/decompile_class_files_before.gif" alt="" /></a>
+						<a href="demo_videos/decompile_class_files_after.gif" class="image fit thumb"><img
+								src="demo_videos/decompile_class_files_after.gif" alt="" /></a>
+					</div>
+					<h2><strong>VS Code Java</strong>: Decompile Class Files</h2>
+					<p>Java, Typescript, VS Code API</p>
+					<h4> As seen in the demo on the left, before the change, opening a class file was not supported and
+						would show the raw content if we tried to open it.
+						To address this, I created this webview page that calls the decompiler to show the decompiled
+						class content that's readable.
+						I enjoying having the design freedom for this feature, where I got to pitch my own ideas on what
+						the feature should look like based on my understanding of user base and the problem.
+					</h4>
+				</article>
+				<article class="col-12 work-item">
+					<h2><strong>VS Code XML Extension</strong>: New Formatting Strategy and Settings</h2>
+					<p>Java</p>
+					<h4>I adapted 10 existing settings of the old formatter to the new formatter and implemented the new
+						max line width setting as requested by users. The
+						main reason behind rewriting the formatter was to create a fault tolerant formatter that worked
+						well even with invalid XML. Read about the new strategy and list of preferences in detail <a
+							ref="https://github.com/redhat-developer/vscode-xml/blob/main/docs/Formatting.md#formatting-strategy">
+							here.</a>
+						After the experimental formatter was made the default, I'm also responsible for any formatting
+						related bugs or additional enhancement requests coming from users. It was very fulfilling to
+						have interactions where you get to help out a user with a fix or provide an answer for their
+						question.
+					</h4>
+				</article>
+			</div>
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2> &#128075; Nice to meet you!
-								 </h2>
-						</header>
-						<p><span class="image left"><img src="images/kimono.jpg" alt="" /></span><br /><br />I'm Jessica, a soon to be computer engineer who specializes in <strong> web development, data science, and machine intelligence.</strong> 
-							My strong interpersonal skills as well as genuine interest in building meaningful connections makes me an efficient team member and leader.
-							 I'm always eager to expand my skill set and grow in this exhilarating world of tech!</p>
+		</section>
 
-					</section>
+		<section id="personal-projects">
+			<h2><strong>Projects</strong></h2>
+			<div class="row">
+				<article class="col-12 work-item">
+					<a href="demo_videos/mealdork_demo.gif" class="image fit thumb"><img
+							src="demo_videos/mealdork_demo.gif" alt="" /></a>
+					<h2><strong>MealDork</strong>: A Grocery List Generation App</h2>
+					<p>Python, KivyMD</p>
+					<h4>I created this app out of my own need of a grocery list app that suits my personal method of
+						shopping, which was previously unavaliable on the market.
+						This app takes inputs of personal recepies, stores it in a database, and generates a shopping
+						list based on user preferences.
+						The app also includes an recipe explore page that uses the Spoonacular API to display popular
+						recipes. </h4>
+				</article>
+				<article class="col-12 work-item">
+					<a href="demo_videos/sMaps_demo.gif" class="image fit thumb"><img src="demo_videos/sMaps_demo.gif"
+							alt="" /></a>
+					<h2><strong>sMaps</strong>: City map tailored for campus life</h2>
+					<p>C++</p>
+					<h4>sMaps is a usable map made for students that includes amenity and live weather data that is
+						avaliable for 20+ cities worldwide.
+						Multiple algorithms like A*, 2-opt, and multi-start results in an optimized search feature that
+						is user-friendly with auto-complete.
+						To ensure the map is responsive with larger cities, efficient coding and multithreading were
+						used to reduce complexity as much as possible.
+					</h4>
+				</article>
+				<article class="col-12 work-item">
+					<a href="images/mental_health.PNG" class="image fit thumb"><img src="images/mental_health.PNG"
+							alt="" /></a>
+					<h2><strong>Mental Health in Tech</strong>: A closer look</h2>
+					<p>Python, Plotly, Pandas</p>
+					<h4> As someone who is a member of the technology industry, I wanted to see how mental health is
+						perceived in this highly competitive field.
+						This exploratory data analysis of the mental health situation in the technology industry takes a
+						closer look of the
+						correlation between the user data and the mental health policies at their place of employment
+						over time. Extensive cleaning
+						has been done to make the initial data make sense and readable.
+					</h4>
+				</article>
+			</div>
+		</section>
 
-				<!-- Two -->
-					<section id="two">
-						<h2><strong>Projects</strong></h2>
-						<div class="row">
-							<article class="col-12 work-item">
-								<a href="demo_videos/mealdork_demo.gif" class="image fit thumb"><img src="demo_videos/mealdork_demo.gif" alt="" /></a>
-								<h2><strong>MealDork</strong>: A Grocery List Generation App</h2>
-								<p>Python, KivyMD</p>
-								<h4>I created this app out of my own need of a grocery list app that suits my personal method of shopping, which was previously unavaliable on the market. 
-									This app takes inputs of personal recepies, stores it in a database, and generates a shopping list based on user preferences. 
-									The app also includes an recipe explore page that uses the Spoonacular API to display popular recipes. </h4>
-							</article>
-							<article class="col-12 work-item">
-								<a href="demo_videos/sMaps_demo.gif" class="image fit thumb"><img src="demo_videos/sMaps_demo.gif" alt="" /></a>
-								<h2><strong>sMaps</strong>: City map tailored for campus life</h2>
-								<p>C++</p>
-								<h4>sMaps is a usable map made for students that includes amenity and live weather data that is avaliable for 20+ cities worldwide.
-									Multiple algorithms like A*, 2-opt, and multi-start results in an optimized search feature that is user-friendly with auto-complete. 
-									To ensure the map is responsive with larger cities, efficient coding and multithreading were used to reduce complexity as much as possible. 
-								</h4>
-							</article>
-							<article class="col-12 work-item">
-								<a href="images/mental_health.PNG" class="image fit thumb"><img src="images/mental_health.PNG" alt="" /></a>
-								<h2><strong>Mental Health in Tech</strong>: A closer look</h2>
-								<p>Python, Plotly, Pandas</p>
-								<h4> As someone who is a member of the technology industry, I wanted to see how mental health is perceived in this highly competitive field. 
-									This exploratory data analysis of the mental health situation in the technology industry takes a closer look of the
-									correlation between the user data and the mental health policies at their place of employment over time. Extensive cleaning
-									has been done to make the initial data make sense and readable. 
-								</h4>
-							</article>
-						</div>
+		<section id="blogs">
+			<h2><strong>Blogs</strong></h2>
+			<div style="display:flex; flex-direction: row; gap: 2em;">
+				<img src="images/quarkus_logo.png" alt="" style="width: 30%; height:30%;" />
+				<div style="display:flex; flex-direction: column; ">
+					<h3>New Features for Qute Templating Engine Support in Quarkus Tools for Visual Studio Code
+						1.13.0</h3>
+					<h6>April 19, 2023</h6>
+					<a href="https://quarkus.io/blog/vscode-quarkus-1.13.0-released/">
+						Read Here. </a>
+				</div>
+			</div>
+			<h4>
+				<br />This article outlines the exciting features of the new VS Code Quarkus release that improved
+				the Qute Templating Engine support. I was very involved in this release as I either implemented or
+				reviewed most of the features show cased in the blog.
+			</h4>
+			<hr class="solid">
+			<div style="display:flex; flex-direction: row; gap: 2em;">
+				<img src="images/xml_blog.png" alt="" style="width: 30%; height:30%;" />
+				<div style="display:flex; flex-direction: column; ">
+					<h3>How the new VSCode XML extension improves developer experience</h3>
+					<h6>November 29, 2022</h6>
+					<a
+						href="https://developers.redhat.com/articles/2022/11/29/new-vscode-xml-extension-improves-developer-experience">
+						Read Here. </a>
+				</div>
+			</div>
+			<h4>
+				<br />As I worked on adapting the old formatting settings to the new, I also worked on
+				implementing brand
+				new settings that were unique to the new formatter that were heaviliy requested by users.
+				<br /><br /> I wrote about these settings in detail in the
+				<a
+					href="https://developers.redhat.com/articles/2022/11/29/new-vscode-xml-extension-improves-developer-experience#new_experimental_formatter_settings">
+					New experimental formatter settings </a> section.
 
-					</section>
+			</h4>
+		</section>
 
-				<!-- Three -->
-				
-					<section id="three">
-						<h2>Get In Touch!</h2>
-						<p>The best way to contact me would be by email, but also feel free to shoot me a message on any other socials!</p> 
-						<div class="row">
-							<div class="col-4 col-12-small">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										Toronto, Canada
-									</li>
-									<li>
-										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										416-271-9357
-									</li>
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="mailto: jessicaj.he@mail.utoronto.ca">jessicaj.he@mail.utoronto.ca</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-					
+		<section id="socials">
+			<h2>Get In Touch!</h2>
+			<p>The best way to contact me would be by email, but also feel free to shoot me a message on any other
+				socials!</p>
+			<div class="row">
+				<div cflass="col-4 col-12-small">
+					<ul class="labeled-icons">
+						<li>
+							<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+							Toronto, Canada
+						</li>
+						<li>
+							<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+							<a href="mailto: jessicaj.he@mail.utoronto.ca">jessicaj.he@mail.utoronto.ca</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</div>
+</body>
 
-	</body>
 </html>
